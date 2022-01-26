@@ -11,7 +11,6 @@ let logDir =
         Some logDir
     with ex ->
         printfn "ERROR: Couldn't create the log directory!\n%s" (ex.ToString())
-        System.Threading.Thread.Sleep(5000)
         None
 
 /// Logs an error message to a new txt log file
@@ -21,7 +20,7 @@ let logError errStr =
         printfn "----> Reproduced the issue! <----"
         printfn "However, a log file couldn't be written; about to dump the error to stdout..."
         printfn "Dumping error to stdout in 5 seconds..."
-        System.Threading.Thread.Sleep(5_000)
+        System.Threading.Thread.Sleep(5000)
         printfn "%s" errStr
     // Do we have a log directory?
     match logDir with
