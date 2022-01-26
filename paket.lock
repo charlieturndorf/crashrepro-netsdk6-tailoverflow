@@ -1,0 +1,8 @@
+RESTRICTION: == netstandard2.1
+NUGET
+  remote: https://api.nuget.org/v3/index.json
+    FSharp.Core (5.0.2)
+    MathNet.Numerics (4.15)
+    MathNet.Numerics.FSharp (4.15)
+      FSharp.Core (>= 4.3.3)
+      MathNet.Numerics (>= 4.15)
